@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/channels" android:checkableBehavior="single" android:orderInCategory="1">
+        <menu>
+            <item
+                android:id="@+id/school"
+                android:icon="@drawable/ic_dashboard_black_18dp"
+                android:title="@string/school"
+                android:enabled="true"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/div"
+                android:icon="@drawable/ic_dashboard_black_18dp"
+                android:title="@string/div"
+                android:checkable="true"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/discover" android:checkableBehavior="single" android:orderInCategory="1">
+        <menu>
+            <item
+                android:id="@+id/drawer_inspiration"
+                android:icon="@drawable/inspiration"
+                android:title="@string/inspiration"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/drawer_study"
+                android:icon="@drawable/study"
+                android:title="@string/study"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/drawer_entertainment"
+                android:icon="@drawable/entertainment"
+                android:title="@string/entertainment"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/drawer_social"
+                android:icon="@drawable/social"
+                android:title="@string/social"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/drawer_friends"
+                android:icon="@drawable/friends"
+                android:title="@string/friends"
+                android:checkable="true"/>
+        </menu>
+    </item>
+
+    <group android:id = "@+id/course_menu" android:checkableBehavior="single"/>
+
+    <item android:title="@string/action_settings" android:orderInCategory="999">
+        <menu>
+            <item
+                android:id="@+id/change_name"
+                android:icon="@drawable/ic_autorenew_black_18dp"
+                android:title="@string/changeName" />
+            <item
+                android:id="@+id/share_location"
+                android:icon="@drawable/share_location"
+                android:title="@string/share_location" />
+            <item
+                android:id="@+id/sign_out_menu"
+                android:icon="@drawable/ic_eject_black_18dp"
+                android:title="@string/sign_out" />
+            <item
+                android:id="@+id/menu_none"
+                android:title=""
+                android:checkable="true"
+                android:visible="false"/>
+        </menu>
+    </item>
+
+</menu>

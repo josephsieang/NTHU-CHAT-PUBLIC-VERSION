@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context="com.google.firebase.codelab.nthuchat.Amusement">
+
+
+<com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+    android:id="@+id/swipyrefreshlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+    app:srl_direction="bottom">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/entertainmentRecyclerView"  />
+
+</com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+
+<LinearLayout
+    android:weightSum="10"
+    android:id="@+id/linearLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+<ProgressBar
+    android:id="@+id/progressBarEntertainment"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true" />
+
+</FrameLayout>
+

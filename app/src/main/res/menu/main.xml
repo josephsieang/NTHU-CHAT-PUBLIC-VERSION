@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cameraBtn"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/camera"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/doneBtn"
+        android:title="@string/done"
+        app:showAsAction="ifRoom"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/mapBtn"
+        android:icon="@drawable/map"
+        app:showAsAction="ifRoom"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/activity_show_maps_back"
+        android:title="Back"
+        app:actionLayout="@layout/custom_action_bar"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="@string/refresh"
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+
+    <item
+        android:id="@+id/addFriend"
+        android:orderInCategory="100"
+        android:title="@string/addFriend"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/addInspiration"
+        android:orderInCategory="100"
+        android:title="@string/addInspiration"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/addStudy"
+        android:orderInCategory="100"
+        android:title="@string/addStudy"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/addEntertainment"
+        android:orderInCategory="100"
+        android:title="@string/addEntertainment"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/addSocial"
+        android:orderInCategory="100"
+        android:title="@string/addSocial"
+        app:showAsAction="never" />
+
+</menu>
